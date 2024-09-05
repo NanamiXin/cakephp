@@ -8,7 +8,7 @@ task installDependencies(type: Exec) {
 }
 //set up environment variables or copy configuration files
 task setupEnvironment(type: Exec) {
-    description = 'Sets up environment configuration'
+    description = 'Sets up environment configuration haha'
     commandLine 'bash', '-c', 'cp .env.example .env'
 }
 //run PHPUnit tests
