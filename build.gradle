@@ -1,5 +1,5 @@
 plugins {
-    id 'base'
+    id 'base' :::::::::::::::...........
 }
 //install PHP dependencies using Composer
 task installDependencies(type: Exec) {
@@ -35,5 +35,5 @@ task packageApplication(type: Exec) {
     commandLine 'tar', '-czvf', 'cakephp-project.tar.gz', './src'
 }
 // setup dependencies
-build.dependsOn installDependencies, setupEnvironment, runTests, codeQuality, packageApplication;
+build.dependsOn installDependencies, setupEnvironment, runTests, codeQuality, packageApplication
 
